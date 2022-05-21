@@ -36,3 +36,106 @@
     transform: rotate(360deg);
   }
 }
+
+*{
+  margin: 0;
+  padding: 0;
+  background-color: #282c34;
+}
+
+.inp{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin-top:7vh;
+}
+
+.container{
+  flex: content;
+  flex-direction: column;
+  align-content: center;
+}
+.list{
+  margin-left:25vw;
+}
+
+.head{
+  align-content: center;
+  justify-content: center;
+  margin-left:42vw;
+  color: rgb(14, 234, 237);
+  margin-top:15vh;
+}
+
+
+/*------------ delete */
+.pushable {
+  background: hsl(340deg 100% 32%);
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+}
+.front {
+  display: block;
+  padding: 1px 4px;
+  border-radius: 12px;
+  font-size: 1rem;
+  background: hsl(345deg 100% 47%);
+  color: white;
+  transform: translateY(-6px);
+}
+
+.pushable:active .front {
+  transform: translateY(-2px);
+}
+
+
+/*------------ completed */
+.pushable1 {
+  background: rgb(163, 114, 0);
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+}
+.front1 {
+  display: block;
+  padding: 1px 4px;
+  border-radius: 12px;
+  font-size: 1.0rem;
+  background: rgb(255, 242, 2);
+  color: rgb(0, 0, 0);
+  transform: translateY(-6px);
+}
+
+.pushable1:active .front1 {
+  transform: translateY(-2px);
+}
+
+
+/*------------ add to list */
+.pushable2 {
+  background: rgb(50, 139, 5);
+  border-radius: 17px;
+  border:solid 2px;
+  padding: 1.8px;
+  cursor: pointer;
+  outline-offset: 4px;
+}
+.front2 {
+  display: block;
+  padding: 8px 6px;
+  border-radius: 12px;
+  font-size: 1.0rem;
+  background: rgb(6, 252, 63);
+  color: rgb(12, 4, 22);
+  transform: translateY(-6px);
+}
+
+.pushable2:active .front2 {
+  transform: translateY(-2px);
+}
